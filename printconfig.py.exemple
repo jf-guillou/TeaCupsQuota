@@ -1,0 +1,3 @@
+checkBaseUrl = "http://foo.bar/check.php"
+setBaseUrl = "http://foo.bar/set.php"
+checksumSalt = "4d5aae0d63e94c"
