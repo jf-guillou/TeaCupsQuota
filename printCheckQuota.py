@@ -29,7 +29,7 @@ if res['status'] == "error" or (res['status'] == "success" and not res['data']['
 f.write(url + "\n")
 f.write(json.dumps(res) + "\n")
 
-if returcode == 0 :
+if returncode == 0 :
 	printedcount = netsnmp.snmpget(".1.3.6.1.2.1.43.10.2.1.4.1.1", Version=1, DestHost=os.getenv("TEAPRINTERADDR"), Community="public")[0]
 	f.write("Printedcount : " + printedcount + "\n")
 	print printedcount
